@@ -1,0 +1,16 @@
+/*
+1) De base, l'ascii vas de paire avec le binaire. Il est donc logique qu'en théorie une caractère ascii soit codé sur 8bits. Mais il n'en est rien.
+Ils le sont en vérité (et en pratique) sur 7. C'est enfaite car le dernier bit n'est jamais utilisé car la table ascii n'est pas assez grandes (128 char), il est donc à 0. 
+
+2)"Coucou" fait 6 char, soit 7*6 (7bits et 6char) = 42bits.
+
+3) Il s'agit d'un arbre dont chacune des branches crée 2 branches (0 ou 1).
+Dans le cas de l'arbre de Huffman, les deux choix sont composés d'une branche ou d'une feuille dans la plupart du temps.
+
+5) En ascii, "Coucou" prend 42 bits. Ici il en prend 12 (soit un gain de 30).
+
+6) C'est la taille des charactère en binaire. En ascii, il sont tous composé de 7 bits. 
+Ici leurs tailles varies, on ne peut savoir quand un charactère se termine et un autre commence.
+Il faut donc une "aide", ici c'est le tableau d'encodage.
+
+*/

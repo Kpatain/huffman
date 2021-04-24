@@ -7,6 +7,8 @@ using namespace std;
 
 Node::Node()
 {
+	Node* n = new Node(l, 25, 1);
+	n = new Node(l, 25, 0);
 
 }
 

@@ -10,6 +10,22 @@
 
 using namespace std;
 
+/*
+	Après moulte tentatives je ne comprend pas la stratégie de code à adopter (entre la question 4 et 5)
+	j'essaye alors ici de créer l'arbre par récurrence (je créé la racine et l'arbre en découle)
+	mais ne connaissant pas assez cet aspect du cpp je ne suis même passur que l'on puisse appeler un creator d'un node dans lui même !
+	M'en voila bien penaud.
+	Il manque encore les références entre node de toute sorte pour structuré un peu tout ça, mais bon je ne peux pas le tester 
+	(brancheGauche* et brancheDroite* quelque chose comme ça). 
+	Et la fin de ma crétion aussi n'est pas bonne (ne se fini pas par deux feuilles) 
+	mais bon encore un fois je ne peux pas le tester de toute façcon je ne comprend vraiment pas pourquoi.
+
+	" C2661	'Node::Node' : aucune fonction surchargée ne nécessite 2 arguments "
+
+	alors que si techniquement       Node(vector<pair<char, int>> v, int index);        a 2 arguments ¯\_(--)_/¯
+
+*/
+
 // on print un vecteur de nodeFeuille
 void showvecNode(vector<NodeFeuille*> v)
 {

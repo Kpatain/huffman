@@ -10,9 +10,10 @@
 
 using namespace std;
 
-void showVecNode(vector<Node*> v)
+// on print un vecteur de nodeFeuille
+void showvecNode(vector<NodeFeuille*> v)
 {
-	vector<Node*> vec = v;
+	vector<NodeFeuille*> vec = v;
 
 	for (int i = 0; i < vec.size(); i++)
 	{
@@ -21,6 +22,7 @@ void showVecNode(vector<Node*> v)
 	cout << endl;
 }
 
+//on print le vecteur des occurences
 void showVecPair(vector<pair<char, int>> v)
 {
 	vector<pair<char, int>> vec = v;
@@ -48,7 +50,8 @@ int main()
 	fstream fs;
 	map<char, int> charMap;
 	char c;
-	vector<pair<char, int>> vecNode;
+	vector<pair<char, int>> vecList;
+	vector<NodeFeuille*> vecNode;
 	pair <char, int> product1;
 	
 	//OPENING TXT
@@ -63,36 +66,47 @@ int main()
 
 		//MAP IMPLEMENTATION
 		map<char, int>::iterator it = charMap.find(c);
-		//IL EXISTE
+		//il est la
 		if (it == charMap.end())
 		{
 			charMap.insert({ c,1 });
 		}
 
-		//IL EXISTE PAS ENCORE
+		//il est pas la
 		else
 		{
 			it->second += 1;
 		}
 	}
 
-	//PRINTING THE MAP ZEBI
+	//On fait la map a partir du texte
 	for (const auto & l : charMap) {
 		cout << "Char: " << l.first << " = " << l.second << " fois" << endl;
 		pair<char, int> pair(l.first, l.second);
 
-		vecNode.push_back(pair);
-
-		//Node* node = new Node(l.first, l.second);
-
+		// et on l'a met dans un tableau enfaite parceque c'est plus facile a trier
+		vecList.push_back(pair);
 	}
 
-	showVecPair(vecNode);
-	sort(vecNode.begin(), vecNode.end(), sortbysec);
-	reverse(vecNode.begin(), vecNode.end());
-	showVecPair(vecNode);
+	//On crée un tas de feuilles au moins et on les stacks dans vecNode
+	for (int i = i; i < vecList.size(); i++)
+	{
+		//Tas de feuilles
+		NodeFeuille* nodeFeuille = new NodeFeuille(vecList,i);
+		vecNode.push_back(nodeFeuille);
+	}
 
-	Node* node = new Node(vecNode, 0);
+	//On print vecNode
+	showvecNode(vecNode);
+
+	//On re ordre un peu vecList
+	showVecPair(vecList);
+	sort(vecList.begin(), vecList.end(), sortbysec);
+	reverse(vecList.begin(), vecList.end());
+	showVecPair(vecList);
+
+	//puis on créé l'arbre en récurrence
+	Node* node = new Node(vecList, -1);
 
 
 	return 0;

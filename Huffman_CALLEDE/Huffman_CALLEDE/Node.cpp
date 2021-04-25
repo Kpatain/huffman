@@ -9,74 +9,65 @@ using namespace std;
 
 Node::Node()
 {
-	//Node* n = new Node(l, 25, 1);
-	//n = new Node(l, 25, 0);
 
 }
 
-Node::Node(char l, int f)
-{
-	setLetter(l);
-	setfreq(f);
-}
 
-Node::Node(vector<pair<char, int>> v, int index)
+Node::Node(vector<pair<char, int>> v, int i)
 {
+	vector<pair<char, int>> vec = v;
+
+	//son étages (0 = root)
+	setIndex(i);
+
+
 	int sum = 0;
-	for (int i = index; i < v.size(); i++)
+	for (int i = i; i < vec.size(); i++)
 	{
-		sum = sum + v[i].second;
+		sum = sum + vec[i].second;
 	}
 
-	index = index + 1;
-
-	//FEUILLE
-	NodeFeuille* feuille = new NodeFeuille(v, index);
-
-	//BRANCHE
+	//La somme restante
 	settotal(sum);
-	Node* node = new Node(v, index);
+
+	i = i + 1;
+
+	// si on dépasse pas le nombre de type de char
+	if (i < vec.size()) {
+		//FEUILLE CREA
+		NodeFeuille* feuille = new NodeFeuille(vec, i);
+
+		//BRANCHE CREA
+		Node* node = new Node(vec, i); // BAM CA MARCHE PAS super allé 
+	}
+	
 }
 
-Node::Node(vector<pair<char, int>> v, int index)
-{
-	setLetter(v[index].first);
-	setfreq(v[index].second);
-}
 
 Node::~Node()
 {
-	//cout << "Detruit" << endl;
+	//cout << "nodeBranche mort" << endl;
 }
 
-//FONCTION DE CRETION DE NODE
-//void Node::createNode(int index)
 
 //GETTERS
-char Node::getLetter()const
-{
-	return letter;
-}
-int Node::getFreq() const
-{
-	return freq;
-}
 int Node::getTotal() const
 {
 	return total;
 }
+int Node::getIndex() const
+{
+	return index;
+}
 
 
 //SETTERS
-void Node::setLetter(char l)
-{
-	letter = l;
-}
-void Node::setfreq(int f)
-{
-	freq = f;
-}
 void Node::settotal(int t)
 {
 	total = t;
+}
+
+void Node::setIndex(int i)
+{
+	index = i;
 }

@@ -1,19 +1,42 @@
 ﻿  Node.cpp
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(13,9): error C2061: erreur de syntaxe : identificateur 'vector'
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(23,1): error C2511: 'Node::Node(bool,std::vector<std::pair<char,int>,std::allocator<std::pair<char,int>>>,int)' : impossible de trouver la fonction membre surchargée dans 'Node'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(11,9): error C2061: erreur de syntaxe : identificateur 'vector'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(11,9): error C2535: 'Node::Node(void)' : fonction membre déjà définie ou déclarée
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(10): message : voir la déclaration de 'Node::Node'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(12,16): error C2061: erreur de syntaxe : identificateur 'vector'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(12,16): error C2535: 'NodeFeuille::NodeFeuille(void)' : fonction membre déjà définie ou déclarée
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(11): message : voir la déclaration de 'NodeFeuille::NodeFeuille'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(16,1): error C2511: 'Node::Node(std::vector<std::pair<char,int>,std::allocator<std::pair<char,int>>>,int)' : impossible de trouver la fonction membre surchargée dans 'Node'
 C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(3): message : voir la déclaration de 'Node'
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(25,24): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(32,3): error C2352: 'Node::settotal' : appel non conforme d'une fonction membre non static
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(19): message : voir la déclaration de 'Node::settotal'
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(34,37): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 3 arguments
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(39,3): error C2352: 'Node::setLetter' : appel non conforme d'une fonction membre non static
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(17): message : voir la déclaration de 'Node::setLetter'
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(40,3): error C2352: 'Node::setfreq' : appel non conforme d'une fonction membre non static
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(18): message : voir la déclaration de 'Node::setfreq'
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(41,37): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 3 arguments
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(18,2): error C2352: 'Node::setIndex' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(16): message : voir la déclaration de 'Node::setIndex'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(21,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(28,8): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(30,49): error C2661: 'NodeFeuille::NodeFeuille' : aucune fonction surchargée ne nécessite 2 arguments
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(33,3): error C2352: 'Node::settotal' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(15): message : voir la déclaration de 'Node::settotal'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(34,32): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 2 arguments
+  NodeFeuille.cpp
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(12,16): error C2061: erreur de syntaxe : identificateur 'vector'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(12,16): error C2535: 'NodeFeuille::NodeFeuille(void)' : fonction membre déjà définie ou déclarée
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(11): message : voir la déclaration de 'NodeFeuille::NodeFeuille'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.cpp(16,1): error C2511: 'NodeFeuille::NodeFeuille(std::vector<std::pair<char,int>,std::allocator<std::pair<char,int>>>,int)' : impossible de trouver la fonction membre surchargée dans 'NodeFeuille'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(3): message : voir la déclaration de 'NodeFeuille'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.cpp(18,2): error C2352: 'NodeFeuille::setLetter' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(16): message : voir la déclaration de 'NodeFeuille::setLetter'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.cpp(19,2): error C2352: 'NodeFeuille::setfreq' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(17): message : voir la déclaration de 'NodeFeuille::setfreq'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.cpp(20,2): error C2352: 'NodeFeuille::setIndex' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(18): message : voir la déclaration de 'NodeFeuille::setIndex'
   Source.cpp
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(13,9): error C2061: erreur de syntaxe : identificateur 'vector'
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(16,20): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(27,20): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(94,38): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 3 arguments
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(11,9): error C2061: erreur de syntaxe : identificateur 'vector'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(11,9): error C2535: 'Node::Node(void)' : fonction membre déjà définie ou déclarée
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(10): message : voir la déclaration de 'Node::Node'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(12,16): error C2061: erreur de syntaxe : identificateur 'vector'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(12,16): error C2535: 'NodeFeuille::NodeFeuille(void)' : fonction membre déjà définie ou déclarée
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\NodeFeuille.h(11): message : voir la déclaration de 'NodeFeuille::NodeFeuille'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(17,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(28,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(88,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(91,56): error C2661: 'NodeFeuille::NodeFeuille' : aucune fonction surchargée ne nécessite 2 arguments
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(102,36): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 2 arguments
   Génération de code en cours...

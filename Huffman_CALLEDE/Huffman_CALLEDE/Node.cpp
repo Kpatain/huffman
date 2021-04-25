@@ -1,4 +1,5 @@
 #include "Node.h"
+#include "NodeFeuille.h"
 #include <iostream>
 #include <vector>
 
@@ -19,7 +20,7 @@ Node::Node(char l, int f)
 	setfreq(f);
 }
 
-Node::Node(bool b, vector<pair<char, int>> v, int index)
+Node::Node(vector<pair<char, int>> v, int index)
 {
 	int sum = 0;
 	for (int i = index; i < v.size(); i++)
@@ -27,20 +28,20 @@ Node::Node(bool b, vector<pair<char, int>> v, int index)
 		sum = sum + v[i].second;
 	}
 
-	if (b)
-	{
-		settotal(sum);
-		index = index + 1;
-		Node* node = new Node(1, v, index);
+	index = index + 1;
 
-	}
-	else
-	{
-		setLetter(v[index].first);
-		setfreq(v[index].second);
-		Node* node = new Node(0, v, index);
-	}
+	//FEUILLE
+	NodeFeuille* feuille = new NodeFeuille(v, index);
 
+	//BRANCHE
+	settotal(sum);
+	Node* node = new Node(v, index);
+}
+
+Node::Node(vector<pair<char, int>> v, int index)
+{
+	setLetter(v[index].first);
+	setfreq(v[index].second);
 }
 
 Node::~Node()

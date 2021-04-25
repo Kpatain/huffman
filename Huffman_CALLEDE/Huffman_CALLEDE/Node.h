@@ -11,6 +11,7 @@ public:
     Node();
     Node(char l, int f);
     Node(bool b, vector<pair<char, int>> v, int index);
+    Node(vector<pair<char, int>> v, int index);
     ~Node();
 
     //SETTERS

@@ -6,6 +6,7 @@
 #include <queue>
 
 #include "Node.h"
+#include "NodeFeuille.h"
 
 using namespace std;
 
@@ -91,7 +92,7 @@ int main()
 	reverse(vecNode.begin(), vecNode.end());
 	showVecPair(vecNode);
 
-	Node* node = new Node(1, vecNode, 0);
+	Node* node = new Node(vecNode, 0);
 
 
 	return 0;

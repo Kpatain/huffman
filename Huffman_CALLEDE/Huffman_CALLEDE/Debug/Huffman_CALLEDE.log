@@ -1,6 +1,4 @@
 ﻿  Source.cpp
 C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(16,20): warning C4018: '<' : incompatibilité signed/unsigned
 C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(27,20): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(44,13): warning C4834: abandon de la valeur de retour de la fonction ayant l'attribut 'nodiscard'
-C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(44,28): warning C4834: abandon de la valeur de retour de la fonction ayant l'attribut 'nodiscard'
   Huffman_CALLEDE.vcxproj -> C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Debug\Huffman_CALLEDE.exe

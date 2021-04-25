@@ -2,12 +2,14 @@
 #include <fstream>
 #include <map>
 #include <vector>
+#include <string>
+#include <queue>
 
 #include "Node.h"
 
 using namespace std;
 
-void showVec(vector<Node*> v)
+void showVecNode(vector<Node*> v)
 {
 	vector<Node*> vec = v;
 
@@ -18,15 +20,33 @@ void showVec(vector<Node*> v)
 	cout << endl;
 }
 
+void showVecPair(vector<pair<char, int>> v)
+{
+	vector<pair<char, int>> vec = v;
+
+	for (int i = 0; i < vec.size(); i++)
+	{
+		cout << vec[i].first << " //  " << vec[i].second;
+		cout << endl;
+	}
+	cout << endl;
+}
+
+
 //test de tri
 
-void sortMap(map<char, int> m) {
-	map<char, int> map = m;
-	for (int i = m.size()-1; i > 1; i--) {
+vector<pair<char, int>> sortVec(vector<pair<char, int>> v) {
+	vector<pair<char, int>> vec = v;
+	for (int i = v.size()-1; i > 1; i--) {
 		for (int j = 0; j < i - 1; j++) {
-			if (l.second < map.begin()->second)
+			if (v[j + 1].second < v[j].second)
+			{
+				(v[j + 1], v[j]) = (v[j], v[j + 1]);
+			}
 		}
 	}
+
+	return vec;
 }
 
 int main()
@@ -35,7 +55,8 @@ int main()
 	fstream fs;
 	map<char, int> charMap;
 	char c;
-	vector<Node*> vecNode;
+	vector<pair<char, int>> vecNode;
+	pair <char, int> product1;
 	
 	//OPENING TXT
 	fs.open("Lyrics.txt");
@@ -64,17 +85,17 @@ int main()
 
 	//PRINTING THE MAP ZEBI
 	for (const auto & l : charMap) {
-		std::cout << "Char: " << l.first << " = " << l.second << " fois" << endl;
+		cout << "Char: " << l.first << " = " << l.second << " fois" << endl;
+		pair<char, int> pair(l.first, l.second);
 
-		Node* node = new Node(l.first, l.second);
+		vecNode.push_back(pair);
 
+		//Node* node = new Node(l.first, l.second);
 
 	}
 
-
-
-	
-
+	showVecPair(vecNode);
+	showVecPair(sortVec(vecNode));
 
 
 

@@ -1,4 +1,19 @@
-﻿  Source.cpp
+﻿  Node.cpp
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(13,9): error C2061: erreur de syntaxe : identificateur 'vector'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(23,1): error C2511: 'Node::Node(bool,std::vector<std::pair<char,int>,std::allocator<std::pair<char,int>>>,int)' : impossible de trouver la fonction membre surchargée dans 'Node'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(3): message : voir la déclaration de 'Node'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(25,24): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(32,3): error C2352: 'Node::settotal' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(19): message : voir la déclaration de 'Node::settotal'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(34,37): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 3 arguments
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(39,3): error C2352: 'Node::setLetter' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(17): message : voir la déclaration de 'Node::setLetter'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(40,3): error C2352: 'Node::setfreq' : appel non conforme d'une fonction membre non static
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(18): message : voir la déclaration de 'Node::setfreq'
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.cpp(41,37): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 3 arguments
+  Source.cpp
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Node.h(13,9): error C2061: erreur de syntaxe : identificateur 'vector'
 C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(16,20): warning C4018: '<' : incompatibilité signed/unsigned
 C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(27,20): warning C4018: '<' : incompatibilité signed/unsigned
-  Huffman_CALLEDE.vcxproj -> C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Debug\Huffman_CALLEDE.exe
+C:\Users\Vincent\Documents\GitHub\huffman\Huffman_CALLEDE\Huffman_CALLEDE\Source.cpp(94,38): error C2661: 'Node::Node' : aucune fonction surchargée ne nécessite 3 arguments
+  Génération de code en cours...

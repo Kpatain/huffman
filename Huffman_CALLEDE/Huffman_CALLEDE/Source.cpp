@@ -33,31 +33,8 @@ void showVecPair(vector<pair<char, int>> v)
 }
 
 
-//test de tri
 
-vector<pair<char, int>> sortVec(vector<pair<char, int>> v) {
-
-	//DECLARATION
-	vector<pair<char, int>> vec = v;
-	pair<char, int> buff;
-
-	//SORT
-	for (int i = v.size()-1; i > 1; i--) {
-		for (int j = 0; j < i - 1; j++) {
-			if (v[j + 1].second < v[j].second)
-			{
-				buff = v[j + 1];
-				v[j + 1] = v[j];
-				v[j] = buff;
-				//(v[j + 1], v[j]) = (v[j], v[j + 1]);
-				cout << buff.second << " ";
-			}
-		}
-	}
-
-	return vec;
-}
-
+//SORTING
 bool sortbysec(const pair<int, int>& a,
 	const pair<int, int>& b)
 {
@@ -111,9 +88,10 @@ int main()
 
 	showVecPair(vecNode);
 	sort(vecNode.begin(), vecNode.end(), sortbysec);
+	reverse(vecNode.begin(), vecNode.end());
 	showVecPair(vecNode);
-	//showVecPair(sortVec(vecNode));
 
+	Node* node = new Node(1, vecNode, 0);
 
 
 	return 0;

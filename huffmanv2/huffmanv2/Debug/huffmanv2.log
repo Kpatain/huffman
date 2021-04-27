@@ -1,0 +1,7 @@
+﻿  Node.cpp
+C:\Users\Vincent\Documents\GitHub\huffman\huffmanv2\huffmanv2\Node.cpp(8,8): warning C4101: 'droite' : variable locale non référencée
+C:\Users\Vincent\Documents\GitHub\huffman\huffmanv2\huffmanv2\Node.cpp(7,8): warning C4101: 'gauche' : variable locale non référencée
+C:\Users\Vincent\Documents\GitHub\huffman\huffmanv2\huffmanv2\Node.cpp(16,8): warning C4101: 'droite' : variable locale non référencée
+C:\Users\Vincent\Documents\GitHub\huffman\huffmanv2\huffmanv2\Node.cpp(15,8): warning C4101: 'gauche' : variable locale non référencée
+C:\Users\Vincent\Documents\GitHub\huffman\huffmanv2\huffmanv2\Node.cpp(52): warning C4715: 'Node::getChild' : les chemins de contrôle ne retournent pas tous une valeur
+  huffmanv2.vcxproj -> C:\Users\Vincent\Documents\GitHub\huffman\huffmanv2\Debug\huffmanv2.exe

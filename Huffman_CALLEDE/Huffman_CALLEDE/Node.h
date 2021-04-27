@@ -1,22 +1,27 @@
 #pragma once
+#include <iostream>
 
 class Node{
 private:
-    int total = 0;
-    int index = 0;
+    char c;
+    int f;
+    Node* gauche;
+    Node* droite;
 
 public:
-
     Node();
-    Node(vector<pair<char, int>> v, int index);
+    Node(char c, int f);
+    Node(int f, Node* g, Node* d);
     ~Node();
 
     //SETTERS
-    void settotal(int t);
-    void setIndex(int i);
+    void setFrenquency(int f);
+    void setChar(char c);
+    void setChild(char ch, Node& ref);
 
     //GETTERS
-    int getTotal()const;
-    int getIndex()const;
+    char getLetter();
+    int getFrequency();
+    Node* getChild(char ch);
 };
 
